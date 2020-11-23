@@ -1,0 +1,407 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+/* diatas css reset ^*/
+
+
+body { 
+  font-family: sans-serif; 
+}
+
+
+/* cover */
+.image1{
+  padding: 180px 0 100px 0;
+  background-image: url(animated1.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  max-width: 100%;
+  background-attachment: scroll;
+}
+/* text cover */
+.image1 h1 {
+  padding-top: 230px; 
+  font-size: 45px;
+  letter-spacing: 5px;
+  margin-bottom: 10px;
+}
+
+.image1 p {
+  margin-bottom: 3px;
+}
+/* tombol lanjut di cover */
+.lanjut {
+  font-style: normal;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding: 7px 40px;
+  background-color: #0010ee;
+  cursor: pointer;
+  box-shadow: 4px 4px 4px #00000094;
+  width: 120px;
+  height: 45px;
+  margin: auto;
+  margin-top: 70px;
+  border-radius: 7%;
+}
+.lanjut:hover {
+  padding: 7px 40px;
+  background-color: #00ee4f;
+  cursor: pointer;
+  box-shadow: 4px 4px 4px #00000094;
+  width: 160px;
+  height: 45px;
+  margin:auto;
+  margin-top: 70px;
+  border-radius: 7%;
+  
+}
+.lanjut:active {
+  padding: 7px 40px;
+  background-color: #ee4b00;
+  cursor: pointer;
+  box-shadow: 4px 4px 4px #00000094;
+  width: 200px;
+  height: 45px;
+  margin:auto;
+  margin-top: 70px;
+  border-radius: 7%;
+  
+}
+
+
+.content1 {
+max-width: 100%;
+margin-left: 3%;
+margin-top: 2%;
+}
+.content1 h1{
+  text-align: left;
+  font-size: 42px;  
+  font-family: Georgia, 'Times New Roman', Times, serif;
+
+}
+.content1 p{
+  margin-top: 20px;
+  margin-bottom: 30px;
+  text-align: left;
+  font-size: 14px;  
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  
+  }
+
+/*search*/
+#container {
+  margin-right: 90px;
+  height: 60px;
+  float: right;
+  padding: 0;
+}
+input[type="text"] {
+  font-family: 'Dosis', sans-serif;
+  height: 66px;
+  font-size: 30px;
+  border: none;
+  color: #14627e;
+  padding-right: 60px;
+  width: 250px;
+  border-radius: 15px;
+  right: 0;
+  background: rgba(48, 47, 47, 0.226);
+  z-index: 9;
+  transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+  cursor: pointer;
+}
+input[type="text"]:focus {
+  width: 750px;
+  z-index: 1;
+  border-bottom: 1px solid rgb(31, 28, 28);
+  cursor: text;
+}
+input[type="submit"] {
+  height: 50px;
+  width: 65px;
+  border: none;
+  background: url('/kelompok3/logo/search.png') no-repeat;
+  background-size: 38px;
+  margin-left: -55px;
+
+}
+input[type="submit"]:hover {
+  opacity: 0.8;
+}
+
+  /*galeri*/
+.cont {
+margin-top: 70px;
+  }
+.cont h2{ margin-left: 30px;
+}
+.cont p{
+  margin-left: 30px;
+}
+  .container {
+    position: relative;
+    width: 50%;
+  }
+  
+  .image {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+  }
+  
+  .overlay {
+    border-radius: 12px;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: #3a42448f;
+  }
+  
+  .container:hover .overlay {
+    opacity: 1;
+  }
+  
+  .text {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  table {
+    margin: 1% 5% 0 1%;
+  }
+
+/* tombol lihat lebih banyak destinasi */
+  .button {
+    border-radius: 4px;
+    background-color: #2884ee;
+    border: none;
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 15px;
+    padding: 10px;
+    width: 180px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 30px 30px;
+    
+  }
+  
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+#more {display: none;}
+
+  /*footer*/
+  #autoplay {
+    margin-top: 10px;
+    width: 100%;
+    max-height: 410px;
+    object-fit: cover;
+    position: relative;
+    border-radius: 1%;
+
+
+  }
+
+  footer{
+   
+    
+    margin-top: -8px;
+    background-color: rgb(15, 14, 14);
+    border-top: solid;
+    width: 100%;
+    min-height: 337px;
+    padding-bottom: 1px;
+  }
+  footer .atas {
+    width: 100%;
+    height: 75px;
+    border-bottom: solid;
+  }
+  footer .atas p{
+    width: 500px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(245, 245, 245, 0.904);
+    float: left;
+    margin-top: 10px;
+    margin-left: 150px;
+    text-align: right;
+  }
+  .atas .mail{
+    float: right;
+    margin: 12px;
+    width: 520px;
+    transition: width .4s cubic-bezier(0.000, 0.795, 0.000, 1.000);
+    cursor: pointer;
+  }
+  .atas #mail{
+    height: 45px;
+    width: 500px;
+    border-radius: 7px;
+  }
+  .atas #mail:focus{
+    font-size: 19px;
+  }
+  .atas #button:focus{
+    opacity: 0.8;
+  }
+  .atas #button:hover{
+    background-size:30px;
+  }
+  
+  .atas #button{
+    width: 42px;
+    background-image: url(/kelompok3/logo/mail.png);
+    background-size: 28px;
+    background-repeat: no-repeat;
+    margin-left: -55px;
+    border: none;
+    
+  }
+  footer .bawah{
+    display: inline;
+    width: 100%;
+    height: fit-content;
+    color: rgb(65, 64, 64);   
+  }
+  .bawah .exp{
+    width: 280px;
+    margin-top: -110px;
+    margin-left: 2%;
+    margin-right: 200px;
+    float: left;
+  }
+  .ikon-kanan img {
+    width: 30px;
+    margin: 10px;
+
+  }
+
+  .bawah .list {
+    margin-top: 15px;
+    margin-bottom: 50px;
+
+  }
+  .list ul li {
+    display: inline;
+    padding-left: 10px;
+    padding-right: 10px;
+    border-right: solid;
+  }
+.ikon-kanan{
+  margin-top: -70px;
+  float: right;
+  margin-right: 20px;
+}
+/* tombol lanjut */
+html {
+  scroll-behavior: smooth;
+}
+
+#section1 {
+ 
+  padding: 1px;
+  margin: auto;
+  width: 70px;
+  height: 30px;
+  background-color: rgb(255, 123, 0);
+  border-radius: 3px;
+ font-style: normal;
+ 
+}
+#section1:hover{
+  background-color: #00ee4f;
+  
+}
+
+#section2 {
+  
+  
+}
