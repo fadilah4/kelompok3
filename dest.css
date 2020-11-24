@@ -50,13 +50,85 @@ table {
 
 
 /* diatas css reset ^*/
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  overflow-x: hidden;}
 
-
-body { 
-  font-family: sans-serif; 
+/* header*/
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 35px;
+  transition: all ease .65s;
+  z-index: 10;
+  width: 100%;
+  position: fixed;
+  border-bottom: rgba(6, 94, 116, 0.151) solid 1px;
+ 
+  
 }
 
+.logo {
+  font-size: 24px;
+  margin-left: 10px;
+  float: left;
+}
 
+ul {
+  float: right;
+  list-style: none;
+  padding: 0;
+  margin-right: 75px;
+}
+
+li {
+  display: inline-block;
+  padding: 0;
+
+ 
+}
+
+li a{
+  text-decoration: none;
+  list-style: none;
+  padding: 12px;
+  border: none;
+  
+  
+  
+}
+li a.active{
+  background-color: #00ee4f;
+}
+li a:hover{
+  text-decoration: none;
+  background-color: rgba(231, 0, 0, 0.404);
+
+}
+/**
+* Scrolling CSS
+*/
+nav.scroll {
+  padding: 10px;
+  padding-top: 20px;
+  background: rgba(0, 0, 0, 0.795);
+  position: fixed;
+  z-index: 10;
+}
+
+nav.scroll span {
+  font-size: 18px;
+  color: white;
+}
+
+nav.scroll li a{
+  color: white;
+}
+/* ============================ */
 /* cover */
 .image1{
   padding: 180px 0 100px 0;
@@ -67,6 +139,8 @@ body {
   text-align: center;
   max-width: 100%;
   background-attachment: scroll;
+ 
+ 
 }
 /* text cover */
 .image1 h1 {
@@ -398,10 +472,5 @@ html {
 }
 #section1:hover{
   background-color: #00ee4f;
-  
-}
-
-#section2 {
-  
   
 }
